@@ -17,18 +17,6 @@ export default function Home() {
         <p className="description">
           This is a boilerplate template for the Login Page <code>/login</code>
         </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>TBD &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>TBD &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-        </div>
       </main>
 
       <footer>

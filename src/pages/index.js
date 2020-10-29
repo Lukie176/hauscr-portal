@@ -5,29 +5,61 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>My Tasks</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          My Tasks
+          HAUSCRTech Development Hub
         </h1>
 
         <p className="description">
-          This is a boilerplate template for the My Tasks Page <code>/tasks</code>
+          Navigate to your respective page, build components, and save to <code>\src\components\</code>
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>TBD &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href="/login">
+            <a className="card">
+              <h3>Andrew &rarr;</h3>
+              <p>Login: Left HAUSCR icon, background, password reset</p>
+            </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>TBD &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href="/login">
+            <a className="card">
+              <h3>Jeffrey &rarr;</h3>
+              <p>Login: Right form (buttons, form fields, sign in header)</p>
+            </a>
+          </Link>
+
+          <Link href="/tasks">
+            <a className="card">
+              <h3>Luke &rarr;</h3>
+              <p>Page structure, more to TBD</p>
+            </a>
+          </Link>
+
+          <Link href="/tasks">
+            <a className="card">
+              <h3>Michelle &rarr;</h3>
+              <p>Tasks: Blue/Red buttons, page headers</p>
+            </a>
+          </Link> 
+
+          <Link href="/tasks">
+            <a className="card">
+              <h3>Stephanie &rarr;</h3>
+              <p>Tasks: Table format, table headers with icons</p>
+            </a>
+          </Link>
+
+          <Link href="/tasks">
+            <a className="card">
+              <h3>Yoel &rarr;</h3>
+              <p>Tasks (Navbar): HAUSCR logo, links, hover effects</p>
+            </a>
+          </Link>
         </div>
       </main>
 
