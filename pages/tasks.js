@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         </h1>
 
         <p className="description">
-          This is a filler for the My Tasks Page <code>/tasks</code>
+          This is a boilerplate template for the My Tasks Page <code>/tasks</code>
         </p>
 
         <div className="grid">
@@ -31,14 +32,9 @@ export default function Home() {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+        <Link href="/"><a>Home &nbsp;</a></Link>
+        <Link href="/login"><a>Login &nbsp;</a></Link>
+        <Link href="/tasks"><a>Tasks &nbsp;</a></Link>
       </footer>
 
       <style jsx>{`

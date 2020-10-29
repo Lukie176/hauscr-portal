@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,69 +15,58 @@ export default function Home() {
         </h1>
 
         <p className="description">
-          Locate your respective components and see how they render at <code>/PageMyTasks/Components/</code>
+          Navigate to your respective page, build components, and save to <code>/components/</code>
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Andrew &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href="/login">
+            <a className="card">
+              <h3>Andrew &rarr;</h3>
+              <p>Login: Left HAUSCR icon, background</p>
+            </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Jeffrey &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href="/login">
+            <a className="card">
+              <h3>Jeffrey &rarr;</h3>
+              <p>Login: Right form (button, form fields, sign in header)</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Luke &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Link href="/tasks">
+            <a className="card">
+              <h3>Luke &rarr;</h3>
+              <p>Sidebar: HAUSCR logo, links</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Michelle &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/tasks">
+            <a className="card">
+              <h3>Michelle &rarr;</h3>
+              <p>Tasks: Blue/Red buttons, page header, table headers</p>
+            </a>
+          </Link> 
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Stephanie &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/tasks">
+            <a className="card">
+              <h3>Stephanie &rarr;</h3>
+              <p>Tasks: Table format</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Yoel &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/tasks">
+            <a className="card">
+              <h3>Yoel &rarr;</h3>
+              <p>Something else that's interesting?</p>
+            </a>
+          </Link>
         </div>
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+        <Link href="/"><a>Home &nbsp;</a></Link>
+        <Link href="/login"><a>Login &nbsp;</a></Link>
+        <Link href="/tasks"><a>Tasks &nbsp;</a></Link>
       </footer>
 
       <style jsx>{`
