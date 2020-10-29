@@ -1,0 +1,1 @@
+To be populated with assets used in React components.
