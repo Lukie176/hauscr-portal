@@ -4,6 +4,8 @@
 
 First install Node.js and npm [here](https://nodejs.org/en/download/current/). We are using Node.js version 15.0.1.
 
+Install git [here](https://git-scm.com/downloads).
+
 Install a code editor such as [Visual Studio](https://visualstudio.microsoft.com/downloads/), [Sublime Text](https://www.sublimetext.com/3), [Atom](https://atom.io/), etc.
 
 ### Clone the repository
