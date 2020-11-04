@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import SigninCard from '../components/signin'
+import LeftLogo from '../components/leftlogo'
 
 export default function Home() {
   return (
@@ -9,14 +11,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="title">
-          Login
-        </h1>
-
-        <p className="description">
-          This is a boilerplate template for the Login Page <code>/login</code>
-        </p>
+      <main className="container">
+        <div className="split">
+          <LeftLogo />
+        </div>
+        <div className="split">
+          <SigninCard />
+        </div>
       </main>
 
       <footer>
