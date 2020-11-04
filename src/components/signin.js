@@ -5,11 +5,15 @@ import SignInButton from './signinbutton'
 class SigninCard extends React.Component {
 
   render() {
+    const signin_card = {
+      margin: "20%",
+    }
+
     return(
-      <div class="signin_card">
-        <h1></h1>
-        <InputField />
-        <InputField />  
+      <div style={signin_card}>
+        <h1>Sign In</h1>
+        <InputField placeholder="Username"/>
+        <InputField placeholder="Password"/>  
         <SignInButton />
         <p>Reset Password</p>
       </div>

@@ -10,3 +10,7 @@
   flex: 1;
   margin: auto;
 }
+
+.login_button {
+  background-color:rgba(174, 54, 70, 0.6);
+}
