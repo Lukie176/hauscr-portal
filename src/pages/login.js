@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container">
+      <main className="canvas">
         <div className="split">
           <LeftLogo />
         </div>
@@ -27,6 +27,21 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+        .association_title {
+          text-transform: uppercase;
+        }
+        
+        .canvas {
+          display: flex;
+          flex-direction: row;
+        }
+        
+        .split {
+          flex: 1;
+          margin: auto;
+          text-align: center;
+        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -37,6 +52,7 @@ export default function Home() {
         }
 
         main {
+          width: 100%;
           padding: 5rem 0;
           flex: 1;
           display: flex;
