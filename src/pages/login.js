@@ -4,6 +4,30 @@ import SigninCard from '../components/signin'
 import LeftLogo from '../components/leftlogo'
 
 export default function Home() {
+  const split_style = {
+    height: "100%",
+    flex: "1",
+    textAlign: "center",
+  }
+
+  const split_style_right = {
+    height: "100%",
+    width: "50%",
+    margin: "5% !important",
+    backgroundColor: "rgba(174, 54, 70, 0.6)",
+    borderRadius: "5px",
+    opacity: "0.7",
+    zIndex: "-1",
+    flex: "1",
+    textAlign: "center",
+  }
+
+  const canvas_style = {
+    padding: "0",
+    display: "flex",
+    flexDirection: "row",
+  }
+
   return (
     <div className="container">
       <Head>
@@ -11,11 +35,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="canvas">
-        <div className="split">
+      <main style={canvas_style} className="canvas">
+        <div style={split_style} className="split">
           <LeftLogo />
         </div>
-        <div className="split">
+        <div style={split_style_right} className="split">
           <SigninCard />
         </div>
       </main>
@@ -27,21 +51,6 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .association_title {
-          text-transform: uppercase;
-        }
-        
-        .canvas {
-          display: flex;
-          flex-direction: row;
-        }
-        
-        .split {
-          flex: 1;
-          margin: auto;
-          text-align: center;
-        }
-
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
