@@ -1,0 +1,7 @@
+/* Component-level CSS must only use Class and ID CSS selectors*/
+p.sample {
+  color: crimson;
+  border-style: groove;
+  padding: 12px;
+  margin: 5px;
+}
