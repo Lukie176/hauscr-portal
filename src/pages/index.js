@@ -64,9 +64,9 @@ export default function Home() {
       </main>
 
       <footer>
-        <Link href="/"><a>Home &nbsp;</a></Link>
-        <Link href="/login"><a>Login &nbsp;</a></Link>
-        <Link href="/tasks"><a>Tasks &nbsp;</a></Link>
+        <Link href="/"><a>Home</a></Link> &nbsp;&nbsp;&nbsp;
+        <Link href="/login"><a>Login</a></Link> &nbsp;&nbsp;&nbsp;
+        <Link href="/tasks"><a>Tasks</a></Link> &nbsp;&nbsp;&nbsp;
       </footer>
     </div>
   )
