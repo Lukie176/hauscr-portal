@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Navigation from '../components/navbar'
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <title>My Tasks</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <main>
         <h1 className="title">
           My Tasks
@@ -18,7 +19,7 @@ export default function Home() {
           This is a boilerplate template for the My Tasks Page <code>/tasks</code>
         </p>
       </main>
-
+      <Navigation></Navigation>
       <footer>
         <Link href="/"><a>Home &nbsp;</a></Link>
         <Link href="/login"><a>Login &nbsp;</a></Link>
