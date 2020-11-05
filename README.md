@@ -22,6 +22,10 @@ You'll work independently in your own branch, which will be intermittently merge
 
 Individual pages are found in `\src\pages`, which will be built via components saved in `\src\components`. Your responsibilities are divided by pages and further by components within those pages. To format the overall page structure, the respective JavaScript file in `\src\pages` will be modified, but you will first want to code the individual components of your pages. Feel free to import your components to your pages and see how they look rendered in the development environment.
 
+### Styling
+
+This project possesses both a global styling sheet at `\src\static\styles.css`, as well as styling sheets at a per-component level within `\src\components\[ComponentName].module.css`. When styling a component, one should create this CSS file and populate it with the needed styling. One can import this component specific styling via `import styles from './[ComponentName].module.css'`. Class or IDs should be referenced within the component via `styles.[className]` or `styles.[ID]` respectively.
+
 ### See your changes
 
 In the project directory, executing `npm run dev` runs the React app in a development environment.
