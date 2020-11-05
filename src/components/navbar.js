@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 class Navigation extends React.Component{
     render() {
         const listStyle = {
@@ -43,7 +42,7 @@ class Navigation extends React.Component{
         }
         
         return (
-            <div class="container" >
+            <div className="container" >
                 <ul className="nav flex-column" style={listStyle}>
                     <li className="nav-item">
                         <img src="/logo.png" style={logo} className="center"/>
