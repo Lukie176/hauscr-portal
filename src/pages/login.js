@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import SigninCard from '../components/signin'
 import LeftLogo from '../components/leftlogo'
-
+ 
 export default function Home() {
   const split_style = {
     height: "100%",
@@ -26,6 +26,31 @@ export default function Home() {
     padding: "0",
     display: "flex",
     flexDirection: "row",
+    zIndex: '3',
+  }
+
+  const dark_overlay = {
+    zIndex: '1',
+    height: '100%',
+    width: '100%',
+    position: 'fixed',
+    overflow: 'auto',
+    top: '0px',
+    left: '0px',
+    bottom: '0px',
+    right: '0px',
+    background: 'rgba(0, 0, 0, 0.7)'
+  }
+
+  const imageResize = {
+    height: '100%',
+    width: '100%',
+    position: 'fixed',
+    overflow: 'auto',
+    top: '0px',
+    left: '0px',
+    bottom: '0px',
+    right: '0px',
   }
 
   return (
@@ -34,7 +59,9 @@ export default function Home() {
         <title>Login</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div style={dark_overlay}>
+        <img src="/shanghai_image.png" style={imageResize}></img>
+      </div>
       <main style={canvas_style} className="canvas">
         <div style={split_style} className="split">
           <LeftLogo />
