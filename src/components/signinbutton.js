@@ -5,8 +5,15 @@ class SignInButton extends React.Component {
     const login_button = {
       backgroundColor: "rgba(174, 54, 70, 0.6)",
       color: "white",
-      borderRadius: "7px",
-      height: "20%"
+      border: '2px solid #FFFFFF',
+      borderRadius: "10px",
+      padding: '10px',
+      width: '65%',
+      height: "10vh",
+      fontSize: '50px',
+      lineHeight: '63px',
+      fontStyle: 'normal',
+      fontWeight: 'normal',
     }
     
     return (

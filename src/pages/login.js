@@ -8,6 +8,7 @@ export default function Home() {
     height: "100%",
     flex: "1",
     textAlign: "center",
+    zIndex: '10'
   }
 
   const split_style_right = {
@@ -16,13 +17,20 @@ export default function Home() {
     margin: "5% !important",
     backgroundColor: "rgba(174, 54, 70, 0.6)",
     borderRadius: "5px",
-    opacity: "0.7",
-    zIndex: "-1",
+    opacity: "1",
+    zIndex: "5",
     flex: "1",
     textAlign: "center",
   }
 
   const canvas_style = {
+    height: '100%',
+    width: '100%',
+    top: '0px',
+    left: '0px',
+    bottom: '0px',
+    right: '0px',
+    opacity: '1',
     padding: "0",
     display: "flex",
     flexDirection: "row",
@@ -51,10 +59,11 @@ export default function Home() {
     left: '0px',
     bottom: '0px',
     right: '0px',
+    opacity: '1',
   }
 
   return (
-    <div className="container">
+    <div className="container2">
       <Head>
         <title>Login</title>
         <link rel="icon" href="/favicon.ico" />
@@ -70,12 +79,6 @@ export default function Home() {
           <SigninCard />
         </div>
       </main>
-
-      <footer>
-        <Link href="/"><a>Home</a></Link> &nbsp;&nbsp;&nbsp;
-        <Link href="/login"><a>Login</a></Link> &nbsp;&nbsp;&nbsp;
-        <Link href="/tasks"><a>Tasks</a></Link> &nbsp;&nbsp;&nbsp;
-      </footer>
     </div>
   )
 }
