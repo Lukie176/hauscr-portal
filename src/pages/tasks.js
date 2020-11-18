@@ -24,7 +24,7 @@ export default function Home() {
           <TemplateComponent text="Custom Text 2" />
         </div>
       </main>
-      <Navigation></Navigation>
+      <Navigation />
       <footer>
         <Link href="/"><a>Home</a></Link> &nbsp;&nbsp;&nbsp;
         <Link href="/login"><a>Login</a></Link> &nbsp;&nbsp;&nbsp;

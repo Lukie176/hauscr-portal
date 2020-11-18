@@ -1,17 +1,25 @@
 class Navigation extends React.Component{
     render() {
-        const listStyle = {
+        const containerStyle = {
+            position: "absolute",
             background: "#AE3646",
-            width:'313.26 !important', 
-            height:'898'
+            left: 0,
+            width: "313px",
+        }
+
+        const listStyle = {
+            position: "absolute",
+            top: "0px"
+            /*background: "#AE3646",
+            width:'313px !important', 
+            height:'898'*/
         };
         const highlighted = {
             background: "#FFFFFF"
         };
 
         const logo = {
-            height: '35%',
-            width: '35%',
+            width: '80%',
             margin: 'auto',
             textAlign: 'center',
             display: 'block',
@@ -27,7 +35,6 @@ class Navigation extends React.Component{
             fontWeight: 'normal',
             fontSize: '34.1734px',
             lineHeight: '41px',
-            textAlign: 'center',
             color: '#AE3646'
         }
 
@@ -37,15 +44,14 @@ class Navigation extends React.Component{
             fontWeight: 'normal',
             fontSize: '34.1734px',
             lineHeight: '41px',
-            textAlign: 'center',
             color: '#FFFFFF'
         }
         
         return (
-            <div className="container" >
+            <div className="container" style={containerStyle}>
                 <ul className="nav flex-column" style={listStyle}>
                     <li className="nav-item">
-                        <img src="/logo.png" style={logo} className="center"/>
+                        <img src="logo.png" style={logo} className="center"/>
                     </li>
                     <li className="nav-item">
                         <hr style={{backgroundColor: "#FFFFFF"}}></hr>
