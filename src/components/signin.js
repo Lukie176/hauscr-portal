@@ -5,19 +5,11 @@ import PasswordResetCard from './passwordreset'
 import styles from './passwordreset.module.css'
 
 class SigninCard extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      isHidden: true
-    }
-  }
 
-  openPasswordReset() {
-    console.log("password reset is being called");
-    var current = this.state.isHidden
-    this.setState({
-      isHidden: !current
-    })
+  openPasswordReset = () => {
+    var password_reset_modal = document.getElementById("reset_password_modal_canvas")
+    //console.log(password_reset_modal);
+    password_reset_modal.style.visibility = "visible"
   }
 
   render() {
@@ -51,7 +43,8 @@ class SigninCard extends React.Component {
       fontFamily: 'Source Sans Pro',
       color: "white",
       fontSize: "20px",
-      lineHeight: "25px"
+      lineHeight: "25px",
+      marginBottom: "20px"
     }
 
     const signin_divider = {
@@ -79,7 +72,7 @@ class SigninCard extends React.Component {
           <p style={reset_password} onClick={() => this.openPasswordReset()}>Reset Password</p>
         </div>
         <div>
-          {!this.state.isHidden && <PasswordResetCard />}
+          {<PasswordResetCard />}
         </div>
       </div>
     )

@@ -25,6 +25,8 @@ class PasswordResetCard extends React.Component {
     }
 
     const passwordResetCard = {
+      //opacity: "0",
+      //transition: "opacity 400ms ease-in",
       padding: "20px",
       position: "absolute",
       width: "35%",
@@ -46,6 +48,7 @@ class PasswordResetCard extends React.Component {
     }
 
     const reset_password_modal = {
+      visibility: "hidden",
       height: '100%',
       width: '100%',
       position: 'fixed',
@@ -80,7 +83,7 @@ class PasswordResetCard extends React.Component {
     }
 
     return (
-        <div className="reset_password_modal_canvas" style={reset_password_modal}>
+        <div className="reset_password_modal_canvas" id="reset_password_modal_canvas" style={reset_password_modal}>
           <div className="reset_password_modal" style={background_modal}>
             <div className="reset_password_card" style={passwordResetCard}>
               <h1 style={password_reset_title}>Password Reset</h1>
