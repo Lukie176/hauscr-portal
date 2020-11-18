@@ -7,6 +7,18 @@ export default function Home() {
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+            rel="preload"
+            href="/BebasNeue-Regular.ttf"
+            as="font"
+            crossOrigin=""
+          />
+        <link
+            rel="preload"
+            href="/SourceSansPro-Light.ttf"
+            as="font"
+            crossOrigin=""
+          />
       </Head>
 
       <main>

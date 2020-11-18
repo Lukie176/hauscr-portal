@@ -1,4 +1,5 @@
 import React from 'react'
+import style from './passwordreset.module.css'
 
 class SignInButton extends React.Component {
   render() {
@@ -9,11 +10,13 @@ class SignInButton extends React.Component {
       borderRadius: "10px",
       padding: '10px',
       width: '65%',
+      marginBottom: '20px', 
       height: "10vh",
+      fontFamily: 'Source Sans Pro',
       fontSize: '50px',
       lineHeight: '63px',
       fontStyle: 'normal',
-      fontWeight: 'normal',
+      fontWeight: '600',
     }
     
     return (

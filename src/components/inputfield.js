@@ -7,11 +7,14 @@ class InputField extends React.Component {
       background: 'transparent',
       border: 'none',
       padding: '10px',
+      margin: '10px',
       width: '80%'
     }  
-
+    const inputBorder = {
+      margin: "10px"
+    }
     return  (
-      <div>
+      <div style={inputBorder}>
         <input className={styles.placeholder} placeholder={this.props.placeholder} style={inputStyle}/>
       </div>
     )

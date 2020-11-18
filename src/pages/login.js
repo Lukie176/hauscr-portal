@@ -8,13 +8,13 @@ export default function Home() {
     height: "100%",
     flex: "1",
     textAlign: "center",
-    zIndex: '10'
+    zIndex: '5'
   }
 
   const split_style_right = {
     height: "100%",
     width: "50%",
-    margin: "5% !important",
+    margin: "8% !important",
     backgroundColor: "rgba(174, 54, 70, 0.6)",
     borderRadius: "5px",
     opacity: "1",
