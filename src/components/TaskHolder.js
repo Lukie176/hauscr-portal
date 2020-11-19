@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-
 import Task from "./Task";
+import styles from "./TaskHolder.module.css"
 
 export default class TaskHolder extends Component {
   constructor() {
@@ -8,16 +8,13 @@ export default class TaskHolder extends Component {
 
     this.state = {
       taskList: [
-        {
-          name: "Create wireframes in Figma  for task assignments page",
-          complete: false,
-        },
-        { name: "Ideation Inspiration in Google Slide Deck", complete: false },
-        {
-          name: "Create 1 wireframe version for task assignments page",
-          complete: true,
-        },
-      ],
+        { name: "Create wireframes in Figma  for task assignments page",
+          complete: false },
+        { name: "Ideation Inspiration in Google Slide Deck", 
+          complete: false },
+        { name: "Create 1 wireframe version for task assignments page",
+          complete: true }
+      ]
     };
 
     this.toggleComplete = this.toggleComplete.bind(this);
@@ -34,7 +31,7 @@ export default class TaskHolder extends Component {
   render() {
     return (
       <div>
-        <h1>Ongoing</h1>
+        <h1 className={styles.header}>Ongoing</h1>
         {this.state.taskList
           .map(({ name, complete }, index) => (
             <Task
@@ -46,7 +43,7 @@ export default class TaskHolder extends Component {
             />
           ))
           .filter((task) => !task.props.complete)}
-        <h1>Completed</h1>
+        <h1 className={styles.header}>Completed</h1>
         {this.state.taskList
           .map(({ name, complete }, index) => (
             <Task

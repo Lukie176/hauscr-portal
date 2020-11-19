@@ -1,5 +1,5 @@
 // import App from 'next/app'
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../static/styles.css';
 
 function MyApp({ Component, pageProps }) {
