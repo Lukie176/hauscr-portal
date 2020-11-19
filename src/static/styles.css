@@ -18,6 +18,10 @@ html, body {
   align-items: center;
 }
 
+.content {
+  margin-left: 325px;
+}
+
 main {
   padding: 5rem 0;
   flex: 1;
