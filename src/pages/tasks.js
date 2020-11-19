@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Navigation from '../components/Navbar'
+import TaskHolder from '../components/TaskHolder'
 
 export default function Home() {
   return (
@@ -17,9 +18,8 @@ export default function Home() {
           My Assignments
         </h1>
 
-        <p className="description">
-          This is a boilerplate template for the My Assignments page <code>/tasks</code>
-        </p>
+        <TaskHolder />
+        
       </main>
     </div>
   )
