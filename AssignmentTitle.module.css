@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+.border {
+	font: thick;
+	border-bottom: 5.7px solid;
+	border-bottom-color: #AE3646;
+	position: absolute;
+	width:522.09px;
+	height: 77.84px;
+	top: 100px;
+	left: 100px;
+}
+
+.title {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 72px;
+	font-style: regular;
+	align-self: center;
+	vertical-align: top;
+	line-height: 100%;
+	font-weight: 400px;
+	color:#AE3646;
+}
