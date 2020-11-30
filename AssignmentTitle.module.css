@@ -3,7 +3,7 @@
 .border {
 	font: thick;
 	border-bottom: 5.7px solid;
-	border-bottom-color: #AE3646;
+	border-bottom-color: rgba(174, 54, 70, 0.7);
 	position: absolute;
 	width:522.09px;
 	height: 77.84px;
