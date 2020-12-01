@@ -25,5 +25,5 @@ export default function Home() {
         <Link href="/tasks"><a>Tasks</a></Link> &nbsp;&nbsp;&nbsp;
       </footer>
     </div>
-  )
+  );
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Navigation from '../components/Navbar'
 import TaskHolder from '../components/TaskHolder'
+import AssignmentTitle from "../components/AssignmentTitle"
 
 export default function Home() {
   return (
@@ -14,12 +15,8 @@ export default function Home() {
       <Navigation route="tasks"/>
       
       <main className="content">
-        <h1 className="title">
-          My Assignments
-        </h1>
-
+        <AssignmentTitle title="My Assignments" />
         <TaskHolder />
-        
       </main>
     </div>
   )
