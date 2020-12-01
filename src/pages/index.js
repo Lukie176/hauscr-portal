@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Navigation from '../components/Navbar'
+import Navigation from '../components/Navigation'
 
 export default function Home() {
   return (

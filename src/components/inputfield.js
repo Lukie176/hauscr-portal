@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './inputfield.module.css'
+import styles from './InputField.module.css'
 
 class InputField extends React.Component {
   render() {

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Task from "./Task";
 import styles from "./TaskHolder.module.css"
 

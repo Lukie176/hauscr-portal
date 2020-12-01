@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './passwordreset.module.css'
+import style from './PasswordReset.module.css'
 
 class SignInButton extends React.Component {
   render() {

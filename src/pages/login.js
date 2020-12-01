@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import SigninCard from '../components/signin'
-import LeftLogo from '../components/leftlogo'
+import SigninCard from '../components/Signin'
+import LeftLogo from '../components/LeftLogo'
  
 export default function Home() {
   const split_style = {

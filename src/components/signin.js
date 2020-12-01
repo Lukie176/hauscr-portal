@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import InputField from './inputfield'
-import SignInButton from './signinbutton'
-import PasswordResetCard from './passwordreset'
-import styles from './passwordreset.module.css'
+import InputField from './InputField'
+import SignInButton from './SigninButton'
+import PasswordResetCard from './PasswordReset'
+import styles from './PasswordReset.module.css'
 
 class SigninCard extends React.Component {
   constructor(props){

@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Navigation from '../components/Navbar'
+import Navigation from '../components/Navigation'
 import TaskHolder from '../components/TaskHolder'
-import AssignmentTitle from "../components/AssignmentTitle"
+import Title from "../components/Title"
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Navigation route="tasks"/>
       
       <main className="content">
-        <AssignmentTitle title="My Assignments" />
+        <Title title="My Assignments" />
         <TaskHolder />
       </main>
     </div>

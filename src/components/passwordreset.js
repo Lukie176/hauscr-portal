@@ -1,6 +1,6 @@
 import React from 'react';
 //this cannot be rendered inside another component, will mess up all the styling
-import styles from './passwordreset.module.css'
+import styles from './PasswordReset.module.css'
 
 class PasswordResetCard extends React.Component {
   render() {
