@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import TemplateComponent from "../components/TemplateComponent"
+import AssignmentTitle from "../components/AssignmentTitle"
 
 export default function Home() {
   return (
@@ -19,8 +19,7 @@ export default function Home() {
           This is a boilerplate template for the My Assignments page <code>/tasks</code>
         </p>
         <div>
-          <TemplateComponent text="Custom Text 1" />
-          <TemplateComponent text="Custom Text 2" />
+          <AssignmentTitle title="Custom Text 1" />
         </div>
       </main>
 
