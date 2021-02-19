@@ -1,14 +1,26 @@
-input.placeholder::placeholder { 
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/SourceSansPro-Light.ttf');
+}
+
+.placeholder, .placeholder::placeholder { 
   color: white;
   opacity: 1; 
   font-family: 'Source Sans Pro';
   font-size: 35px;
   line-height: 44px;
-  font-style: normal;
-  font-weight: normal;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border-bottom: 5px solid #E5E5E5;
 }
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/SourceSansPro-Light.ttf');
+.placeholder:focus {
+    outline-width: 0;
+}
+
+.inputBorder {
+  margin: 10px
 }

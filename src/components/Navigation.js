@@ -21,7 +21,7 @@ class Navigation extends React.Component{
                         <a href="/tasks">MY ASSIGNMENTS</a>
                     </li>
                     <li className={classSelect("reimbursements")}>
-                        <a href="#">REIMBURSEMENTS</a>
+                        <a href="/reimbursements">REIMBURSEMENTS</a>
                     </li>
                     <li className={classSelect("taskform")}>
                         <a href="#">TASK FORM</a>

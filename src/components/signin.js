@@ -18,8 +18,7 @@ class SigninCard extends React.Component {
   }
 
   handleClick = (e) => {
-    //console.log(e.target)
-    const domNode = ReactDOM.findDOMNode(this.ref.current)
+    const domNode = ReactDOM.findDOMNode(ref.current)
     if (domNode.contains(e.target) && e.target.className === 'reset_password_modal') {
         document.getElementById("reset_password_modal_canvas").style.visibility = "hidden"
         document.removeEventListener('click', this.handleOutsideClick, false);
