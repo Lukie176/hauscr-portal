@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./Reimbursements.module.css"
-import PageContainer from "./RichEditor"
+import Request from "./Request"
+import History from "./History"
 
 class Reimbursements extends React.Component {
 
@@ -14,32 +15,16 @@ class Reimbursements extends React.Component {
   render() {
     return (
       <div className={styles.full}>
-        <input className={styles.toggle} type="checkbox"/>
-        <div className={styles.split}>
-          <div className={styles.info}>
-            <h4>
-              Date of Expense: 
-            </h4>
-            <input type="date"/>
-            <h4>Amount: </h4>
-            <input type="number" min="1" step="any" />
-            <h4>Receipt Upload:</h4>
-            <input type="file" />
-          </div>
-          <div className={styles.descriptions}>
-            <h4>Expense description: </h4>
-            <PageContainer />
-            <h4>How would you like to be reimbursed? </h4>
-            <PageContainer />
-            <h4>Check made out to/Venmo username: </h4>
-            <PageContainer />
-          </div>
-        </div>
+        <input onClick={() => {var k  = this.state.request; this.setState({request: !k})}}className={styles.toggle} type="checkbox"/>
+        {
+          this.state.request ?
+          <Request /> : <History />
+        }
+        
         <div className={styles.submit}>
           <button className={styles.submithover} type="submit">Submit</button>
         </div>
-      </div>
-      
+      </div>  
     )
   }
 }
