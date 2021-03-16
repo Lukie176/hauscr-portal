@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Reimbursements.module.css"
 import Request from "./Request"
-import History from "./History"
+import History from "./ReimbursementHistory"
 
 class Reimbursements extends React.Component {
 
@@ -18,12 +18,18 @@ class Reimbursements extends React.Component {
         <input onClick={() => {var k  = this.state.request; this.setState({request: !k})}}className={styles.toggle} type="checkbox"/>
         {
           this.state.request ?
-          <Request /> : <History />
+          (
+          <div>
+            <Request /> 
+            <div className={styles.submit}>
+              <button className={styles.submithover} type="submit">Submit</button>
+            </div>
+          </div>
+          )
+          : <History />
         }
         
-        <div className={styles.submit}>
-          <button className={styles.submithover} type="submit">Submit</button>
-        </div>
+        
       </div>  
     )
   }

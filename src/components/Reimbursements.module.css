@@ -5,6 +5,11 @@
   font-weight: bold;
 }
 
+.table {
+  border-collapse: separate;
+  border-spacing:0 20px;
+}
+
 .full {
   width: 100%;
   margin-top: 5vmin;
@@ -100,4 +105,36 @@
 
 .toggle:checked:before {
   left: 16vmin;
+}
+
+.theader {
+  font: 2.7vmin Bebas Neue;
+}
+
+.ttable {
+  margin-top: 5vmin;
+  margin-right: 5vmin;
+}
+
+.flexit {
+  display: flex;
+  justify-content: center;
+}
+
+.muted {
+  color: gray
+}
+
+.status {
+  display: flex;
+  width: 110px;
+  height: 27px;
+  background: #ae3646;
+  opacity: 0.8;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 0px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
 }
